@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="login-container" class="login-container">
+        <div class="login-profile-picture">
+            <img src="login-pic.jpg" alt="Dheeraj Kumar Profile Picture">
+        </div>
+        <h1 class="login-name">Dheeraj Kumar</h1>
+        <div class="input-group">
+            <button id="login-button" type="button" onclick="login()">Login</button>
+        </div>
+        <p id="message" class="error-message"></p>
+    </div>
+
+    <div id="portfolio-container" class="portfolio-container hidden">
+        
+        <header class="main-header"><!-- Sidebar handles nav --></header>
+
+        <aside class="sidebar collapsed">
+            <a href="#home" id="home-button" class="nav-button active"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#personal" class="nav-button"><i class="fas fa-user"></i><span>Personal Info</span></a>
+            <a href="#qualifications" class="nav-button"><i class="fas fa-graduation-cap"></i><span>Qualifications</span></a>
+            <a href="#certifications" class="nav-button"><i class="fas fa-certificate"></i><span>Certifications</span></a>
+            <a href="#coding" class="nav-button"><i class="fas fa-code"></i><span>Coding Platforms</span></a>
+            <a href="#skills" class="nav-button"><i class="fas fa-lightbulb"></i><span>Skills</span></a>
+            <a href="#projects" class="nav-button"><i class="fas fa-briefcase"></i><span>Projects</span></a>
+            <a href="#contact" class="nav-button"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            <a href="#" id="logout-button" class="nav-button"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        </aside>
+
+        <main class="main-body">
+            
+            <section id="home" class="profile-section" style="display:none;">
+                <div class="hero-section">
+                    <div class="hero-image">
+                        <img src="Homepage-pic.jpg" alt="Dheeraj Kumar">
+                    </div>
+                    <div class="hero-text">
+                        <h1>
+                            <span class="line-1">Hello, This is Dheeraj Kumar!!</span>
+                            <span class="line-2">Student From KL University,</span>
+                            <span class="line-3">Aspiring Data Analyst.</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="home-actions">
+                    <button id="more-toggle" class="more-button"><i class="fas fa-ellipsis-h"></i> More</button>
+                </div>
+            </section>
+
+            <section id="personal" class="profile-section" style="display:none;">
+                <h2> Dheeraj Kumar's Profile</h2>
+                
+                <div class="profile-card">
+                    <div class="profile-picture-placeholder">
+                        <img src="portfolio.pic.jpg" alt="Dheeraj Kumar Profile Picture"> 
+                    </div>
+                    
+                    <div class="profile-bio">
+                        <h3>Personal Details</h3>
+                        <p><strong>Fullname:</strong> Dheeraj Kumar Dasari</p>
+                        <p><strong>Date of Birth:</strong> 8th September 2006</p>
+                        <p><strong>Age:</strong> 19</p>
+                        <p><strong>Address:</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;1. Anantha Reddy Nagar Colony, Parigi<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;2. Kismathpur Bandlaguda Hyderabad.</p>
+                        <p><strong>Height:</strong> 5.9 feets</p>
+                        <p><strong>Occupation:</strong> CSE Student at KL University.</p>
+                        <p><strong>Email ID:</strong> dheerajdasari88@gmail.com</p>
+                        <p><strong>Aadhaar No:</strong> 5349 6043 0321</p>
+                        <p><strong>Hobbies:</strong> Listening to music, watching movies, learning tech skills, and travelling.</p>
+                        
+                        <h3>Family Details</h3>
+                        <p><strong>Father Name:</strong> Ramulu Dasari</p>
+                        <p><strong>Mother Name:</strong> Suhasini Dasari</p>
+                        <p><strong>Father Occupation:</strong> Govt Teacher HM-Gandipet.</p>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="qualifications" class="profile-section" style="display:none;">
+                <h2>My Qualifications</h2>
+                <div class="qualifications-grid">
+                    <div class="qualification-item">
+                        <h3>Schooling</h3>
+                        <p>Krishnaveni Talent School, Parigi.</p>
+                        <p><strong>SSC Score:</strong> 9.7 CGPA</p>
+                    </div>
+                    <div class="qualification-item">
+                        <h3>Intermediate</h3>
+                        <p>Narayana Junior College, Patancheru.</p>
+                        <p><strong>Inter Score:</strong> 94%</p>
+                    </div>
+                    <div class="qualification-item">
+                        <h3>B.Tech (Current)</h3>
+                        <p>Currently Pursuing B.Tech in KL University In CSE branch</p>
+                        <p><strong>First year score:</strong> 9.6 CGPA</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="profile-section" style="display:none;">
+                <h2>My Certificates</h2>
+                <div class="certifications-grid">
+                    <figure class="cert-card">
+                        <img src="image1.png" alt="Bharatiya Antariksh Hakathon">
+                        <figcaption>Bharatiya Antariksh Hakathon</figcaption>
+                    </figure>
+                    <figure class="cert-card">
+                        <img src="image2.png" alt="Eduskill (Internship)">
+                        <figcaption>Eduskill (Internship)</figcaption>
+                    </figure>
+                    <figure class="cert-card">
+                        <img src="image3.png" alt="Infosys Springboard">
+                        <figcaption>Infosys Springboard</figcaption>
+                    </figure>
+                    <figure class="cert-card">
+                        <img src="image4.png" alt="Code chef">
+                        <figcaption>Code chef</figcaption>
+                    </figure>
+                    <figure class="cert-card">
+                        <img src="image5.png" alt="Cambridge Linguaskill">
+                        <figcaption>Cambridge Linguaskill</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="coding" class="profile-section" style="display:none;">
+                <h2>Coding Platforms</h2>
+                <div class="coding-grid">
+                    <div class="code-item tl brand-codechef">
+                        <div class="code-logo"><img src="code1.png" alt="Coding Platform 1"></div>
+                        <a class="code-btn brand-codechef" href="https://www.codechef.com/users/dheeraj_cse206" target="_blank" rel="noopener noreferrer">Codechef</a>
+                    </div>
+                    <div class="code-item tr brand-leetcode">
+                        <div class="code-logo"><img src="code2.png" alt="Coding Platform 2"></div>
+                        <a class="code-btn brand-leetcode" href="https://leetcode.com/u/DheerajKumar_8/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                    </div>
+                    <div class="coder-center"><img src="coder.png" alt="Coder"></div>
+                    <div class="code-item bl brand-hackerrank">
+                        <div class="code-logo"><img src="code3.png" alt="Coding Platform 3"></div>
+                        <a class="code-btn brand-hackerrank" href="https://www.hackerrank.com/profile/h2410030206" target="_blank" rel="noopener noreferrer">HackerRank</a>
+                    </div>
+                    <div class="code-item br brand-codolio">
+                        <div class="code-logo"><img src="code4.png" alt="Coding Platform 4"></div>
+                        <a class="code-btn brand-codolio" href="https://codolio.com/profile/Dheeraj8" target="_blank" rel="noopener noreferrer">Codolio</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="profile-section" style="display:none;">
+                <h2>Skills</h2>
+                <div class="skills-grid" role="list">
+                    <figure class="skill-card skill-c" role="listitem">
+                        <div class="skill-logo" aria-hidden="true"><img src="c.png" alt="C" /></div>
+                        <figcaption>C</figcaption>
+                    </figure>
+                    <figure class="skill-card skill-python" role="listitem">
+                        <div class="skill-logo" aria-hidden="true"><img src="python.png" alt="Python" /></div>
+                        <figcaption>Python</figcaption>
+                    </figure>
+                    <figure class="skill-card skill-hcj" role="listitem">
+                        <div class="skill-logo" aria-hidden="true"><img src="hcj.png" alt="HTML CSS JS" /></div>
+                        <figcaption>HTML • CSS • JS</figcaption>
+                    </figure>
+                    <figure class="skill-card skill-sql" role="listitem">
+                        <div class="skill-logo" aria-hidden="true"><img src="sql.png" alt="SQL" /></div>
+                        <figcaption>SQL</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="projects" class="profile-section" style="display:none;">
+                <h2>Projects</h2>
+                <p>Add your projects here. I can set up project cards (title, description, tech stack, links) if you share the details.</p>
+            </section>
+
+            <section id="contact" class="profile-section" style="display:none;">
+                <h2>Contact</h2>
+                <div class="contact-orbit">
+                    <div class="contact-center">
+                        <img src="contact.png" alt="Contact" onerror="this.src='portfolio.pic.jpg'" />
+                    </div>
+                    <div class="contact-apps-row hidden" aria-hidden="true">
+                        <a class="app-item" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer" aria-label="Open Gmail">
+                            <img src="app1.png" alt="Gmail" onerror="this.onerror=null; this.src='code1.png'" />
+                        </a>
+                        <a class="app-item" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp Web">
+                            <img src="app2.png" alt="WhatsApp" onerror="this.onerror=null; this.src='code2.png'" />
+                        </a>
+                        <a class="app-item" href="https://github.com/Dheeraj-Kumar-8" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub">
+                            <img src="app3.png" alt="GitHub" onerror="this.onerror=null; this.src='code3.png'" />
+                        </a>
+                        <a class="app-item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram">
+                            <img src="app4.png" alt="Instagram" onerror="this.onerror=null; this.src='code4.png'" />
+                        </a>
+                        <a class="app-item" href="http://linkedin.com/in/dheeraj-kumar-105081373/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn">
+                            <img src="app5.png" alt="LinkedIn" onerror="this.onerror=null; this.src='code4.png'" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 Dheeraj Portfolio | All rights reserved. !!</p>
+        </footer>
+
+    </div>
+
+    <script src="Script.js"></script>
+    <script>
+        function login() {
+            const loginContainer = document.getElementById('login-container');
+            const portfolio = document.getElementById('portfolio-container');
+            if (loginContainer) loginContainer.classList.add('hidden');
+            if (portfolio) portfolio.classList.remove('hidden');
+            // reveal the home section by default if present
+            const home = document.getElementById('home');
+            if (home) home.style.display = '';
+        }
+    </script>
+</body>
+</html>
